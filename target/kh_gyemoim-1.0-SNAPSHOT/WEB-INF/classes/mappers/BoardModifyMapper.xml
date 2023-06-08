@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gyemoim.dao.board.BoardModifyDAO">
+
+  <select id="modify" resultType="com.gyemoim.domain.board.BoardVO">
+    SELECT *
+    FROM BOARD
+    WHERE BID = #{bid}
+  </select>
+
+  <select id="attached" resultType="com.gyemoim.domain.board.AttachedVO">
+    SELECT *
+    FROM Attached
+    WHERE BID = #{bid}
+  </select>
+
+  <update id="modifyUpdate">
+    UPDATE BOARD
+    SET uno=#{uno},name=#{name},title=#{title},content=#{content},secret=#{secret}
+    WHERE BID = #{bid}
+  </update>
+
+  <update id="addAttachedUpdate">
+    UPDATE Attached
+    SET fileName=#{fileName}
+    WHERE BID = #{bid}
+  </update>
+
+</mapper>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gyemoim.dao.board.BoardWriteDAO">
+
+  <insert id="write">
+    INSERT INTO BOARD(bid, uNo, name, title, content, type, views, writeDate, secret)
+    VALUES(BID_BOA_SEQ.NEXTVAL, #{uno}, #{name}, #{title}, #{content},'공지사항', '0', SYSDATE , #{secret})
+  </insert>
+
+  <insert id="addAttachedName">
+    INSERT INTO Attached(bid, fileName)
+    VALUES(BID_BOA_SEQ.currval, #{fileName})
+  </insert>
+</mapper>

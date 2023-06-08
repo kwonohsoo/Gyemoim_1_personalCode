@@ -1,0 +1,73 @@
+.text {
+  border: 1px solid #d7dce5;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #373f57;
+  font-family: "Malgun Gothic", gulim, dotum, sans-serif;
+  letter-spacing: -1px;
+  vertical-align: middle;
+  background-color: #fff;
+}
+
+
+.passbox input {
+
+
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #8491a7;
+  padding: 9px 12px 11px 12px;
+  height: 48px;
+  font-size: 16px;
+  line-height: 24px
+
+
+}
+
+
+.button-request {
+   flex:2;
+  height: 48px;
+    margin-left: 15px;
+}
+
+.button-complete {
+  padding: 9px 12px 11px 12px;
+  height: 48px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 24px;
+  width: 100%;
+  letter-spacing: -1px;
+  border-color: #d7dce5;
+  color: #afbac8;
+  background-color: #eaedf4;
+  border-radius: 4px;
+  border: 1px solid #8491a7;
+}
+
+
+.inpChk input[type="checkbox"] {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  vertical-align: -1px;
+  vertical-align: middle;
+}
+
+ul.agree_article {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.agree_article li {
+  display: inline-block;
+  margin: 5px;
+}
+
+.flex {
+  display: flex;
+}
+.flex input{
+ flex:8;
+}

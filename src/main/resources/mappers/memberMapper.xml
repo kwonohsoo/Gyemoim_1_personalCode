@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.gyemoim.dao.member.MemberDAO">
+
+    <!--로그인 / login에 대한 DB 작업을 정의한다. id와 pw가 일치하면 사용자 정보를 담고 있는 객체를 반환한다.-->
+    <select id="login" resultType="com.gyemoim.domain.member.MemberVO">
+
+      select *
+      from Member
+      where email = #{email}
+        and password = #{password}
+
+    </select>
+
+    <!--로그인 세션 유지 / 로그인된 경우 해당 세션 id와 유효시간을 사용자 테이블에 세팅한다.-->
+    <update id="keepLogin">
+        update Member
+        set sessionKey   = #{sessionId},
+            sessionLimit = #{next}
+        where email = #{email}
+    </update>
+
+    <!--세션 키 (암호키) / 유효기간이 남아 있으면서 해당 sessionId를 가지는 사용자 정보를 꺼내오는 부분-->
+    <select id="checkMemberWithSessionKey" resultType="com.gyemoim.domain.member.MemberVO">
+        select *
+        from Member
+        where sessionKey = #{value}
+          and sessionlimit > SYSDATE
+    </select>
+
+    <!--  email 찾기  -->
+    <select id="memberEmailSearch" resultType="com.gyemoim.domain.member.MemberVO">
+        select *
+        from Member
+        where name = #{name}
+          and phone = #{phone}
+          and ssn = #{ssn}
+    </select>
+
+    <!--  passwerd 찾기  -->
+    <select id="memberPwdSearch" resultType="com.gyemoim.domain.member.MemberVO">
+        select *
+        from Member
+        where name = #{name}
+          and phone = #{phone}
+          and email = #{email}
+          and ssn = #{ssn}
+    </select>
+
+</mapper>
+
+

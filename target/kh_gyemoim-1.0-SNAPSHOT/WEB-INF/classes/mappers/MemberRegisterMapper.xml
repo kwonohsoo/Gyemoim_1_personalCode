@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.gyemoim.dao.member.MemberRegisterDAO">
+
+  <!--회원가입 정보 저장-->
+  <insert id="registerMember"  >
+    INSERT  INTO Member(uNo,email,password,name,ssn,phone,addresscode,address,addressdetail)
+    VALUES(uno_mem_seq.nextVal ,#{email},#{password},#{name},#{ssn},#{phone},#{addresscode},#{address},#{addressdetail})
+  </insert>
+
+  <!--중복이메일 확인-->
+  <select id="checkMember" parameterType="String" resultType="Integer">
+    SELECT COUNT(*) FROM Member
+    WHERE email = #{email}
+  </select>
+
+</mapper>

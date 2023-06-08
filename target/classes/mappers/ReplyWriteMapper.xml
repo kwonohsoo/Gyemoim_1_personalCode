@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.gyemoim.dao.board.ReplyWriteDAO">
+
+
+  <insert id="replyWrite">
+    INSERT INTO REPLY( rno
+                    , bid
+                     , uno
+                     , name
+                     , repdate
+                     , comm)
+    VALUES ( rno_reply_seq.nextval
+            , #{bid}
+           , #{uno}
+           , #{name}
+           , SYSDATE
+           , #{comm})
+  </insert>
+
+  <select id="reply" resultType="com.gyemoim.domain.board.ReplyVO">
+    SELECT *
+    FROM REPLY
+    WHERE bid = #{bid}
+  </select>
+</mapper>

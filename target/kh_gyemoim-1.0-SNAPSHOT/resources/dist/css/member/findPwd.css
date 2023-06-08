@@ -1,0 +1,204 @@
+@charset "UTF-8";
+.row.gx-5.justify-content-center {
+    justify-content: center !important;
+    width: 100%;
+    align-items: center;
+}
+
+.login_wrap {
+    left: 50%;
+    margin-left: -250px;
+    padding: 80px 0 92px;
+    position: relative;
+    top: 0;
+    width: 500px;
+}
+
+
+.login_wrap_inner {
+    left: 50%;
+    margin-left: -200px;
+    position: relative;
+    top: 0;
+    width: 400px;
+}
+
+.login_wrap_inner h2.log_logo {
+    background: url("/resources/dist/img/gyemoim_character.png") center / 100% auto no-repeat;
+    display: block;
+    height: 65px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-indent: -20000px;
+    width: 150px;
+}
+
+.login_wrap_inner h2.log_logo.small {
+    width: 149px;
+}
+
+.login_btns_wrap a {
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.login_btns_wrap a.login {
+    background: #004dc1;
+}
+
+
+.findidpw_btns_wrap {
+    font-size: 0;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.findidpw_btns_wrap p {
+    color: #1a1a1a;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    position: relative;
+}
+
+.findidpw_btns_wrap p:first-child {
+    padding-right: 40px;
+}
+
+.findidpw_btns_wrap p:first-child:after {
+    background: #d6d6d6;
+    content: "";
+    height: 13px;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 1px;
+}
+
+.findidpw_btns_wrap p:last-child {
+    margin-left: 40px;
+}
+
+.login_wrap_inner h3.simp_log_ttl:before,
+.login_wrap_inner h3.simp_log_ttl:after {
+    background: #004dc1;
+    content: "";
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    width: 142px;
+}
+
+.login_wrap_inner h3.simp_log_ttl:before {
+    left: 0;
+}
+
+.login_wrap_inner h3.simp_log_ttl:after {
+    right: 0;
+}
+
+.log_point_bnr > strong {
+    color: #1a1a1a;
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.log_point_bnr > strong span {
+    color: #02b1cb;
+}
+
+.log_point_bnr > p {
+    color: #7c7c7c;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 16px;
+}
+
+.log_point_bnr > p span {
+    color: #02b1cb;
+}
+
+.login_wrap_inner h3.log_subttl {
+    color: #1a1a1a;
+    display: block;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1;
+    margin-top: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+.find_pw_field {
+    margin-top: 60px;
+    border: #fff;
+}
+
+.find_pw_field dl {
+    margin-top: 20px;
+}
+
+.find_pw_field dl:first-child {
+    margin-top: 0;
+}
+
+.find_pw_field dl dt {
+    color: #1a1a1a;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.find_pw_field dl dd {
+    margin-top: 15px;
+}
+
+.find_pw_field dl dd:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.find_pw_field dl dd input {
+    border: 1px solid #eee;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #7c7c7c;
+    font-size: 16px;
+    font-weight: 400;
+    height: 60px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+
+.find_pw_field dl dd input.phone_num {
+    float: left;
+    width: 310px;
+}
+
+.find_pw_field dl dd a.btn_certi {
+    background: #f7f7f7;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #7c7c7c;
+    float: right;
+    font-size: 16px;
+    font-weight: 400;
+    height: 60px;
+    line-height: 59px;
+    text-align: center;
+    width: 80px;
+}

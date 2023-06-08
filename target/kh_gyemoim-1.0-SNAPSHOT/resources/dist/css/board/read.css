@@ -1,0 +1,40 @@
+#reply.table tr{
+    border-style: hidden;
+}
+
+td.read-detail {
+    display: flex;
+    column-gap: 30px;
+    background-color: #eee;
+    justify-content: flex-start;
+    padding: 0.7rem;
+  font-size: 14px;
+}
+
+td.read-content {
+    text-align: left;
+}
+
+td.AttachedFile .fileImg img{
+    width: 150px;
+    box-shadow: 2px 2px 4px 1px #bababa;
+}
+td.AttachedFile {
+    display: flex;
+    column-gap: 15px;
+}
+
+#replyModifyBtn, #replyDeleteBtn, #fakeReplyModifyBtn{
+    border-style: hidden;
+    padding: 0.4rem 1rem;
+    margin: 0.5rem .1rem;
+    font-size: .9rem;
+}
+#reply .replyInfo{
+    display: flex;
+    column-gap: 20px;
+    border-style: hidden;
+    align-items: flex-end;
+    padding-left: 15px;
+    padding-bottom: 0;
+}

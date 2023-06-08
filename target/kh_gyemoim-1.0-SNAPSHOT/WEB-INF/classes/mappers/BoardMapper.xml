@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gyemoim.dao.board.BoardDAO">
+
+  <select id="countBoard" resultType="int">
+    SELECT COUNT(*)
+    FROM BOARD
+  </select>
+
+  <select id="searchCountBoard" resultType="int">
+    select count(*)
+    from BOARD
+    where title like '%' || #{keyword} || '%'
+            or content like '%' || #{keyword} || '%'
+       or name = #{keyword}
+  </select>
+
+  <!-- 페이징 처리 후 게시글 조회 -->
+  <select id="selectBoard" resultType="com.gyemoim.domain.board.BoardVO">
+    SELECT *
+    FROM (SELECT rownum RN, A.*
+          FROM (SELECT *
+                FROM BOARD
+                ORDER BY bid DESC) A)
+    WHERE RN BETWEEN ${start} AND ${end}
+  </select>
+
+  <select id="readDetail" resultType="com.gyemoim.domain.board.BoardVO">
+    SELECT *
+    FROM BOARD
+    WHERE BID = #{bid}
+  </select>
+
+  <update id="updateViewCnt">
+    UPDATE BOARD SET views = views + 1 WHERE bid = #{bid}
+  </update>
+
+  <select id="searchList" parameterType="com.gyemoim.domain.board.PageVO" resultType="com.gyemoim.domain.board.BoardVO">
+    select *
+    from (select rownum rn, A.*
+          from (select *
+                from BOARD
+                where title like '%' || #{keyword} || '%'
+                        or content like '%' || #{keyword} || '%'
+                   or name = #{keyword}
+                order by bid desc) A)
+    where RN between ${start} and ${end}
+  </select>
+
+</mapper>

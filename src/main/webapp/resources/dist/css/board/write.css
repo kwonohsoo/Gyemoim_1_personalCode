@@ -1,0 +1,82 @@
+.write-attr {
+  display: flex;
+  align-items: center;
+  margin: 0.8rem 0;
+}
+
+.write-attr .attr-name {
+  flex: 1;
+}
+
+.write-attr .attr-value {
+  flex: 9;
+}
+
+
+.write-attr input {
+  width: 100%;
+  flex: 9;
+  padding: 0.3rem;
+}
+
+.write-attr textarea {
+  min-height: 200px;
+  margin: 1rem 0;
+}
+
+/* 비밀글 */
+.secret-attr, .secret-detail{
+    display: flex;
+}
+.secret-attr .attr-name{
+    flex: 1;
+}
+.secret-attr .secretF-9{
+    flex: 9;
+    column-gap: 2rem;
+    display: flex;
+}
+
+.secret-attr .secret-detail input{
+    flex: 1;
+    margin-right: 5px;
+}
+.secret-attr .secret-detail label{
+    flex: 9;
+}
+
+/* 첨부파일*/
+.write-attr.Attached{
+    align-items: flex-start;
+}
+.write-attr.Attached .attr-img{
+    flex: 9;
+}
+.it {
+  height: 200px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.btn-rmv{
+  display: none;
+}
+
+.rmv {
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #fff;
+    display: inline-block;
+    background: rgba(255, 0, 0, 1);
+    margin: 0 0 0 -15px;
+    width: 30px !important;
+    height: 30px;
+    font-size: 14px;
+    line-height: 0;
+    vertical-align: top;
+    border-radius: 50%;
+}
+
+.rmv:hover {
+  background: rgba(255, 0, 0, 0.5);
+}

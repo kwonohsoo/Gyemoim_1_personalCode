@@ -1,0 +1,147 @@
+@charset "UTF-8";
+.justify-content-center {
+    justify-content: center !important;
+    width: 100%;
+    align-items: center;
+}
+
+.login_wrap {
+    left: 50%;
+    margin-left: -250px;
+    padding: 80px 0 92px;
+    position: relative;
+    top: 0;
+    width: 500px;
+}
+
+.login_wrap_inner {
+    left: 50%;
+    margin-left: -200px;
+    position: relative;
+    top: 0;
+    width: 500px;
+}
+
+.login_wrap_inner h2.log_logo {
+    background: url("/resources/dist/img/gyemoim_character.png") center / 100% auto no-repeat;
+    display: block;
+    height: 65px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-indent: -20000px;
+    width: 150px;
+}
+
+.login_wrap_inner h2.log_logo.small {
+    width: 149px;
+}
+
+.login_btns_wrap a {
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.login_btns_wrap a.login {
+    background: #004dc1;
+}
+
+.findidpw_btns_wrap {
+    font-size: 0;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.findidpw_btns_wrap p {
+    color: #1a1a1a;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    position: relative;
+}
+
+.findidpw_btns_wrap p:first-child {
+    padding-right: 40px;
+}
+
+.findidpw_btns_wrap p:last-child {
+    margin-left: 40px;
+}
+
+.login_wrap_inner h3.log_subttl {
+    color: #1a1a1a;
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1;
+    margin-top: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+.find_field {
+    margin-top: 60px;
+    border: #fff;
+}
+
+.find_field dl {
+    margin-top: 20px;
+}
+
+.find_field dl:first-child {
+    margin-top: 0;
+}
+
+.find_field dl dt {
+    color: #1a1a1a;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.find_field dl dd {
+    margin-top: 15px;
+}
+
+.find_field {
+    border: 2px solid #004dc1;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 20px 0 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.login_frm_guide {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.login_frm_guide ul {
+    margin: 0 auto;
+    width: 300px;
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.login_frm_guide ul li {
+    float: left;
+    color: #000000;
+}
+
+.login_frm_guide ul li a {
+    color: #000000;
+    font-size: 15px;
+}

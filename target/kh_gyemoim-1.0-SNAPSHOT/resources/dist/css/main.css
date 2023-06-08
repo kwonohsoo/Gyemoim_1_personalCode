@@ -1,0 +1,98 @@
+/** main banner**/
+.main-banner {
+  background: url(../img/main-slide-bg02.jpeg) left center / cover no-repeat
+}
+
+.main-banner .container {
+  max-width: 100%;
+}
+
+.main-banner .banner-detail {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.main-banner .banner-detail .banner-text-area {
+  background-color: #3b5c8cbd;
+  padding: 6rem 3rem;
+}
+
+/** stage **/
+.stage h3 {
+  border-bottom: 1px solid #eee;
+}
+
+.stage .stage_num li {
+  border: 1px solid #0693c1;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #0693c1;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 400;
+  height: 32px;
+  line-height: 30px;
+  margin: 0 5px;
+  text-align: center;
+  vertical-align: top;
+  width: 32px;
+}
+
+
+.card-body .pay_count_info {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+
+.card-body .pay_count_info p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+@media (max-width: 767.98px) {
+.card-body .pay_count_info p {
+  font-size: .9rem;
+}
+}
+
+.card-body .pay_count_info .bd-l {
+  border-left: 1px solid;
+}
+
+.card .stage .stage_char img{
+    width: 30%;
+}
+
+.pay-count-total {
+  display: block;
+  text-align: center;
+  padding: 0.35em 1em;
+  font-size: 1.3em;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+
+.stage-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.stage_num li.egg{
+    border: 0;
+    margin-top: -3px;
+}
+.stage_num li.egg img{
+    width: 100%;
+    vertical-align: middle;
+}
+.all_attend{
+    font-weight: 500 !important;
+    color: black !important;
+    font-size: 0.875em !important;
+}

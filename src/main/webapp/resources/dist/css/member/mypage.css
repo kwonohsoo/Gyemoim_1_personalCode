@@ -1,0 +1,57 @@
+#mypage .fcg-3{
+  column-gap: 3rem;
+}
+.join-footer {
+  text-align: center;
+}
+
+
+.btnArea {
+  display: flex;
+  justify-content: center;
+}
+
+
+/*personInfo*/
+.person-tb tr{
+  border-style: hidden;
+}
+.person-tb th {
+  padding: 0.8rem 0;
+  width: 16%;
+}
+
+
+.d-flex {
+  display: flex !important;
+  flex-direction: column;
+}
+
+#aside {
+  position: sticky;
+  top: 100px;
+  right: 300px;
+}
+
+/* 사이드바 */
+.sidebar-title{
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.list-group-flush .checked{
+  background-color: #004dc1;
+  color: white;
+}
+.sidebar-myInfo{
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 1.5rem;
+  column-gap: 15px;
+  align-items: center;
+}
+.sidebar-myInfo img{
+  width:55px;
+}
